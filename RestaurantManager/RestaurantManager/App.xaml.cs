@@ -7,6 +7,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -76,6 +77,31 @@ namespace RestaurantManager
             }
             // Ensure the current window is active
             Window.Current.Activate();
+            //
+            SystemNavigationManager.GetForCurrentView().BackRequested += App_BackRequested;
+        }
+
+        public EventHandler<BackRequestedEventArgs> OnBackRequested;
+
+        private void App_BackRequested(object sender, BackRequestedEventArgs e)
+        {
+            //throw new NotImplementedException();
+            //
+            if(OnBackRequested != null)
+            {
+                OnBackRequested(this, e);
+            }
+            //
+            if(!e.Handled)
+            {
+                Frame frame = Window.Current.Content as Frame;
+                if(frame.CanGoBack)
+                {
+                    frame.GoBack();
+                    //
+                    e.Handled = true;
+                }
+            }
         }
 
         /// <summary>

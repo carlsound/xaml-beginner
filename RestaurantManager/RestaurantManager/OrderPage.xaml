@@ -7,8 +7,108 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     RequestedTheme="Dark">
-
+    <!---->
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <!---->
+    <Grid.RowDefinitions>
+        <!---->
+            <RowDefinition Height="2*"/>
+            <!---->
+        <RowDefinition Height="*"/>
+        <!---->
+            <RowDefinition Height="6*"/>
+            <!---->
+        <RowDefinition Height="*"/>
+        <!---->
+            <RowDefinition Height="*"/>
+            <!---->
+    </Grid.RowDefinitions>
+    <!---->
+        <Grid.ColumnDefinitions>
+            <!---->
+    <ColumnDefinition Width="2*"/>
+    <!---->
+            <ColumnDefinition Width="*"/>
+            <!---->
+    <ColumnDefinition Width="*"/>
+    <!---->
+        </Grid.ColumnDefinitions>
+        <!---->
+    <TextBlock Text="Special Requests:"
+                   Grid.Row="1" 
+                   Grid.Column="1" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top"/>
+    <!---->
+        <TextBlock Text="Order Items:" 
+                   Grid.Row="1" 
+                   Grid.Column="2" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top"/>
+        <!---->
+        <ListView Name="ordersListView"
+                  Grid.Row="0"
+                  Grid.RowSpan="4"
+                  Grid.Column="0"
+                  Background="{ThemeResource ListViewItemOverlayBackgroundThemeBrush}"
+                  BorderBrush="{ThemeResource ListBoxBorderThemeBrush}"
+                  BorderThickness="4">
+            <!---->
+            <ScrollBar Visibility="Collapsed" />
+            <!---->
+        </ListView>
+        <!---->
+        <ListView Name="specialRequestsListView"
+                  Grid.Row="2"
+                  Grid.RowSpan="2"
+                  Grid.Column="1"
+                  Background="{ThemeResource ListViewItemOverlayBackgroundThemeBrush}"
+                  BorderBrush="{ThemeResource ListBoxBorderThemeBrush}"
+                  BorderThickness="4" >
+            <!---->
+            <ScrollBar Visibility="Collapsed" />
+            <!---->
+        </ListView>
+        <!---->
+        <ListView Name="orderItemsListView"
+                  Grid.Row="2"
+                  Grid.RowSpan="2"
+                  Grid.Column="3" >
+            <!---->
+            <ScrollBar Visibility="Collapsed" />
+            <!---->
+        </ListView>
+        <!---->
+        <ToggleSwitch Name="expediteToggleSwitch"
+                      OffContent="Expedite"
+                      OnContent="Expedited"
+                      FontSize="32"
+                      Grid.Row="3"
+                      Grid.Column="1"
+                      HorizontalAlignment="Left"
+                      VerticalAlignment="Bottom"
+                      IsOn="False" Toggled="expediteSwitchToggled"
+                      
+                      />
+        <!---->
+        <Button Name="orderPageAddToOrder"
+                Content="** Add to Order **"
+                Grid.Row="4"
+                Grid.Column="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Click="addToOrder"
+                ClickMode="Press"/>
+        <!---->
+        <Button Name="orderPageSubmitOrder"
+                Content="** Submit Order **"
+                Grid.Row="4"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Click="submitOrder"
+                ClickMode="Press" />
+        <!---->
     </Grid>
 </Page>

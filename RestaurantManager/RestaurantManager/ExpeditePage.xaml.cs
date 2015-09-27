@@ -26,5 +26,22 @@ namespace RestaurantManager
         {
             this.InitializeComponent();
         }
+
+        protected override void OnNavigatedTo(Windows.UI.Xaml.Navigation.NavigationEventArgs e)
+        {
+            if (Frame.CanGoBack)
+            {
+                Windows.UI.Core.SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = Windows.UI.Core.AppViewBackButtonVisibility.Visible;
+            }
+            else
+            {
+                Windows.UI.Core.SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = Windows.UI.Core.AppViewBackButtonVisibility.Collapsed;
+            }
+        }
+
+        private void clearAllOrders(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

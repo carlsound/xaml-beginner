@@ -28,13 +28,38 @@
             <!---->
         </Grid.ColumnDefinitions>
         <!---->
-        <TextBlock Text="Restaurant Manager" FontSize="45" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="0" Grid.ColumnSpan="2" />
+        <TextBlock Text="Restaurant Manager"
+                   FontSize="45"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Bottom"  />
         <!---->
-        <TextBlock Text="Internal Test Version" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="1" Grid.ColumnSpan="2" />
+        <TextBlock Text="Internal Test Version"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Bottom"  />
         <!---->
-        <Button Content="** Go To Orders View **" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0" />
+        <Button Name="mainPageGoToOrdersView"
+                Content="** Go To Orders View **"
+                Grid.Row="2"
+                Grid.Column="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Click="goToOrdersView"
+                ClickMode="Press" />
         <!---->
-    <Button Content="** Submit Order **" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" />
-    <!---->
+        <Button Name="mainPageSubmitOrder"
+                Content="** Submit Order **"
+                Grid.Row="2"
+                Grid.Column="1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Click="submitOrder"
+                ClickMode="Press" />
+        <!---->
     </Grid>
 </Page>
