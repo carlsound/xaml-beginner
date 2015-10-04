@@ -32,7 +32,6 @@
         <!---->
         <GridView x:ConnectionId='1' Name="ordersGridView"
                   Grid.Row="1"
-                  Height=""
                   Background="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}"/>
         <!---->
         <Button x:ConnectionId='2' Name="expeditePageClearAllOrders"

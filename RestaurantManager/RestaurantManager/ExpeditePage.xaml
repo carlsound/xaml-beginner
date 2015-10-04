@@ -32,7 +32,6 @@
         <!---->
         <GridView Name="ordersGridView"
                   Grid.Row="1"
-                  Height=""
                   Background="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}"/>
         <!---->
         <Button Name="expeditePageClearAllOrders"
