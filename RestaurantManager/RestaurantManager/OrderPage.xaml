@@ -12,45 +12,58 @@
         <!---->
     <Grid.RowDefinitions>
         <!---->
+            <RowDefinition Height="Auto"/>
+            <!---->
             <RowDefinition Height="2*"/>
             <!---->
-        <RowDefinition Height="*"/>
-        <!---->
-            <RowDefinition Height="6*"/>
-            <!---->
-        <RowDefinition Height="*"/>
-        <!---->
             <RowDefinition Height="*"/>
             <!---->
-    </Grid.RowDefinitions>
-    <!---->
+            <RowDefinition Height="6*"/>
+            <!---->
+            <RowDefinition Height="*"/>
+            <!---->
+            <RowDefinition Height="*"/>
+            <!---->
+        </Grid.RowDefinitions>
+        <!---->
         <Grid.ColumnDefinitions>
             <!---->
-    <ColumnDefinition Width="2*"/>
-    <!---->
+            <ColumnDefinition Width="2*"/>
+            <!---->
             <ColumnDefinition Width="*"/>
             <!---->
-    <ColumnDefinition Width="*"/>
-    <!---->
+            <ColumnDefinition Width="*"/>
+            <!---->
         </Grid.ColumnDefinitions>
         <!---->
-    <TextBlock Text="Special Requests:"
+        <AppBar Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="3">
+            <!---->
+            <AppBarButton Icon="Home"
+                          Label="Home"
+                          VerticalContentAlignment="Bottom"
+                          Click="navigateToMainPage" />
+            <!---->
+        </AppBar>
+        <!---->
+        <TextBlock Text="Special Requests:"
                    Grid.Row="1" 
                    Grid.Column="1" 
                    HorizontalAlignment="Left" 
                    VerticalAlignment="Top"/>
     <!---->
         <TextBlock Text="Order Items:" 
-                   Grid.Row="1" 
+                   Grid.Row="2" 
                    Grid.Column="2" 
                    HorizontalAlignment="Left" 
                    VerticalAlignment="Top"/>
         <!---->
         <ListView Name="ordersListView"
-                  Grid.Row="0"
-                  Grid.RowSpan="4"
+                  Grid.Row="2"
+                  Grid.RowSpan="3"
                   Grid.Column="0"
-                  Background="{ThemeResource ListViewItemOverlayBackgroundThemeBrush}"
+                  Background="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}"
                   BorderBrush="{ThemeResource ListBoxBorderThemeBrush}"
                   BorderThickness="4">
             <!---->
@@ -59,7 +72,7 @@
         </ListView>
         <!---->
         <ListView Name="specialRequestsListView"
-                  Grid.Row="2"
+                  Grid.Row="3"
                   Grid.RowSpan="2"
                   Grid.Column="1"
                   Background="{ThemeResource ListViewItemOverlayBackgroundThemeBrush}"
@@ -71,9 +84,10 @@
         </ListView>
         <!---->
         <ListView Name="orderItemsListView"
-                  Grid.Row="2"
+                  Grid.Row="3"
                   Grid.RowSpan="2"
-                  Grid.Column="3" >
+                  Grid.Column="3"
+                  Background="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}" >
             <!---->
             <ScrollBar Visibility="Collapsed" />
             <!---->
@@ -83,17 +97,18 @@
                       OffContent="Expedite"
                       OnContent="Expedited"
                       FontSize="32"
-                      Grid.Row="3"
+                      Grid.Row="4"
                       Grid.Column="1"
                       HorizontalAlignment="Left"
                       VerticalAlignment="Bottom"
-                      IsOn="False" Toggled="expediteSwitchToggled"
+                      IsOn="False"
+                      Toggled="expediteSwitchToggled"
                       
                       />
         <!---->
         <Button Name="orderPageAddToOrder"
-                Content="** Add to Order **"
-                Grid.Row="4"
+                Content="Add to Order"
+                Grid.Row="5"
                 Grid.Column="0"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
@@ -101,8 +116,8 @@
                 ClickMode="Press"/>
         <!---->
         <Button Name="orderPageSubmitOrder"
-                Content="** Submit Order **"
-                Grid.Row="4"
+                Content="Submit Order"
+                Grid.Row="5"
                 Grid.Column="1"
                 Grid.ColumnSpan="2"
                 HorizontalAlignment="Center"

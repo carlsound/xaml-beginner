@@ -44,7 +44,7 @@
                    VerticalAlignment="Bottom"  />
         <!---->
         <Button x:ConnectionId='1' Name="mainPageGoToOrdersView"
-                Content="** Go To Orders View **"
+                Content="Go To Orders View"
                 Grid.Row="2"
                 Grid.Column="0"
                 HorizontalAlignment="Center"
@@ -53,7 +53,7 @@
                 ClickMode="Press" />
         <!---->
         <Button x:ConnectionId='2' Name="mainPageSubmitOrder"
-                Content="** Submit Order **"
+                Content="Submit Order"
                 Grid.Row="2"
                 Grid.Column="1"
                 HorizontalAlignment="Center"

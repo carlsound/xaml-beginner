@@ -43,5 +43,10 @@ namespace RestaurantManager
         {
 
         }
+
+        private void navigateToMainPage(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
+        }
     }
 }
