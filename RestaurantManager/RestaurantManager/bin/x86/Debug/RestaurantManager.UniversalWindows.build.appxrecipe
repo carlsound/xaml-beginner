@@ -69,6 +69,12 @@
     <AppxPackagedFile Include="C:\Users\john_\Documents\GitHub\xaml-beginner\RestaurantManager\RestaurantManager\bin\x86\Debug\Core\RestaurantManager.exe">
       <PackagePath>RestaurantManager.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\john_\Documents\GitHub\xaml-beginner\RestaurantManager\RestaurantManager\bin\x86\Debug\Core\RestaurantManager.Models.dll">
+      <PackagePath>RestaurantManager.Models.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\john_\Documents\GitHub\xaml-beginner\RestaurantManager\RestaurantManager\bin\x86\Debug\Core\RestaurantManager.Models\Properties\RestaurantManager.Models.rd.xml">
+      <PackagePath>RestaurantManager.Models\Properties\RestaurantManager.Models.rd.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\john_\Documents\GitHub\xaml-beginner\RestaurantManager\RestaurantManager\bin\x86\Debug\Core\RestaurantManager.xr.xml">
       <PackagePath>RestaurantManager.xr.xml</PackagePath>
     </AppxPackagedFile>

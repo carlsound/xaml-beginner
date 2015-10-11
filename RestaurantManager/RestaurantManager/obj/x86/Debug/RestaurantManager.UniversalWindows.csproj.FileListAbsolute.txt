@@ -432,3 +432,12 @@ C:\Users\john_\Documents\GitHub\xaml-beginner\RestaurantManager\RestaurantManage
 C:\Users\john_\Documents\GitHub\xaml-beginner\RestaurantManager\RestaurantManager\obj\x86\Debug\Core\RestaurantManager.xr.xml
 C:\Users\john_\Documents\GitHub\xaml-beginner\RestaurantManager\RestaurantManager\obj\x86\Debug\Core\WinMetadata\Windows.winmd
 C:\Users\john_\Documents\GitHub\xaml-beginner\RestaurantManager\RestaurantManager\obj\x86\Debug\Core\resources.pri
+C:\Users\john_\Documents\GitHub\xaml-beginner\RestaurantManager\RestaurantManager\bin\x86\Debug\Core\RestaurantManager.Models.dll
+C:\Users\john_\Documents\GitHub\xaml-beginner\RestaurantManager\RestaurantManager\bin\x86\Debug\Core\RestaurantManager.Models.pdb
+C:\Users\john_\Documents\GitHub\xaml-beginner\RestaurantManager\RestaurantManager\bin\x86\Debug\Core\RestaurantManager.Models\Properties\RestaurantManager.Models.rd.xml
+C:\Users\john_\Documents\GitHub\xaml-beginner\RestaurantManager\RestaurantManager\bin\x86\Debug\RestaurantManager.Models.dll
+C:\Users\john_\Documents\GitHub\xaml-beginner\RestaurantManager\RestaurantManager\bin\x86\Debug\RestaurantManager.Models.pdb
+C:\Users\john_\Documents\GitHub\xaml-beginner\RestaurantManager\RestaurantManager\bin\x86\Debug\RestaurantManager.Models.pri
+C:\Users\john_\Documents\GitHub\xaml-beginner\RestaurantManager\RestaurantManager\obj\x86\Debug\Core\RestaurantManager.Models.pdb
+C:\Users\john_\Documents\GitHub\xaml-beginner\RestaurantManager\RestaurantManager\obj\x86\Debug\Core\RestaurantManager.Models.dll
+C:\Users\john_\Documents\GitHub\xaml-beginner\RestaurantManager\RestaurantManager\obj\x86\Debug\Core\RestaurantManager.Models\Properties\RestaurantManager.Models.rd.xml
